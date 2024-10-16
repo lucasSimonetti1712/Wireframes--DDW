@@ -6,7 +6,6 @@
 
 body, html {
   height: 100%;
-  font-family: 'Arial', sans-serif;
 }
 
 header {
@@ -15,7 +14,7 @@ header {
   left: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px 0;
+  padding: 0.625rem 0;
   z-index: 1000;
 }
 
@@ -33,6 +32,9 @@ nav ul li a {
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
   transition: color 0.3s;
 }
 
@@ -51,42 +53,49 @@ nav ul li a:hover {
 .content {
   color: white;
   text-align: left;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
   position: absolute;
-  bottom: 90px;
-  left: 125px;
-  max-width: 400px;
+  bottom: 5.625rem;
+  left: 7.813rem;
+  max-width: 25rem;
 }
 
 h1 {
   font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-weight: bold;  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: normal;  margin-bottom: 1.25rem;
 }
 
 p {
   font-size: 1.2rem;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
+  font-family: "Kanit", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
 p strong {
   font-size: 1.5rem;
-  color: #ffffff;
+  color: #d3d3d3;
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .btn {
   background-color: #007BFF;
   color: white;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   text-decoration: none;
   font-size: 1rem;
-  border-radius: 5px;
+  border-radius: 0.313rem;
   transition: background-color 0.3s;
   width: 22.85rem;
   height: 4rem;
   text-align: center;
-  margin-left: 12.5px;
+  margin-left: 0.781rem;
   border-color: white;
 }
 
@@ -95,12 +104,40 @@ p strong {
   border-color: white;
 }
 
-/* Media queries para pantallas medianas (769px < width < 1024px) */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 3.125rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  padding: 0.625rem;
+  font-family: Arial, sans-serif;
+}
+
+footer p {
+  margin: 0;
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
 @media (max-width: 1024px) and (min-width: 769px) {
+  header {
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 0.313rem 0;
+  }
+
+  nav ul li {
+    margin: 0 0.469rem;
+  }
+
   .content {
-    bottom: 70px;
-    left: 60px;
-    max-width: 350px;
+    bottom: 4.375rem;
+    left: 3.75rem;
+    max-width: 21.875rem;
   }
 
   h1 {
@@ -122,26 +159,35 @@ p strong {
   }
 }
 
-/* Media queries para pantallas pequeñas (<768px) */
+
 @media (max-width: 768px) {
   header {
-    background-color: rgba(0, 0, 0, 0.7); /* Un poco más oscuro para móviles */
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 0.313rem 0;
   }
 
   nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-  } 
+  }
 
   nav ul li {
-    margin: 10px 0;
+    margin: 0 0.625rem;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+  
+  nav ul li {
+    font-size: 1rem;
   }
 
   .content {
-    bottom: 50px;
-    left: 20px;
-    max-width: 300px;
+    bottom: 3.125rem;
+    left: 1.25rem;
+    max-width: 18.75rem;
   }
 
   h1 {
@@ -160,5 +206,29 @@ p strong {
     width: 15rem;
     height: 3rem;
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header{
+    padding: 0.313rem 0;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+
+  nav ul li {
+    margin: 0 0.313rem;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+  
+  nav ul li {
+    font-size: 1rem;
   }
 }

@@ -1,81 +1,219 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #e6e6e6;
+body, html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: #d3d3d3;
 }
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 0;
-    z-index: 1000;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: right;
-    list-style: none;
-  }
-  
-  nav ul li {
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s;
-  }
-  
-  nav ul li a:hover {
-    color: #007BFF;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.63rem 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: right;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 0.94rem;
+}
+
+nav ul li a {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #007BFF;
+}
 
 .container4 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh;
-    padding: 0 50px;
-    background-color: #d3d3d3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 0 3.15rem;
+  flex-wrap: wrap;
 }
 
 .text-section {
-    flex: 1;
-    padding-right: 20px;
+  flex: 1;
+  padding-right: 1.26rem;
 }
 
 .text-section h1 {
-  margin-left: 70px;
-    font-size: 3rem;
-    color: #0066ff;
-    margin-bottom: 20px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-left: 4.41rem;
+  font-size: 3.2rem;
+  color: #0066ff;
+  margin-bottom: 1.26rem;
 }
 
 .text-section p {
-    margin-left: 70px;
-    font-size: 1.2rem;
-    color: #333;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 4.41rem;
+  font-size: 1.3rem;
+  color: #333;
 }
 
 .image-section {
-    flex: 1;
-    text-align: right;
+  flex: 1;
+  text-align: right;
 }
 
 .image-section img {
-  margin-top: 47px;
-  margin-right: -55px;
-  max-width: 875px;
-  height: 875px;
-  border-radius: 10px;
+  margin-top: 2.97rem;
+  margin-right: -3.47rem;
+  max-width: 55.13rem;
+  height: 55.13rem;
+  border-radius: 0.63rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 3.125rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  padding: 0.625rem;
+  font-family: Arial, sans-serif;
+}
+
+footer p {
+  margin: 0;
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@media (max-width: 1325px) {
+  header {
+    padding: 0.31rem 0;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0.63rem;
+    margin-top: 5.04rem;
+  }
+
+  nav ul li {
+    margin: 0 0.47rem;
+  }
+
+  .container4 {
+    padding: 0 1.89rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-section {
+    padding-right: 0;
+    margin-bottom: 1.26rem;
+  }
+
+  .text-section h1 {
+    margin-left: 0;
+    font-size: 2.5rem;
+  }
+
+  .text-section p {
+    margin-left: 0;
+    font-size: 1.1rem;
+  }
+
+  .image-section img {
+    margin: 0;
+    max-width: 44.1rem;
+    height: auto;
+  }
+}
+
+
+@media (max-width: 768px) {
+  header {
+    padding: 0.31rem 0;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+
+  nav ul li {
+    margin: 0 0.31rem;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+
+  nav ul li {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .container4 {
+    padding: 0 1.26rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-section {
+    padding-right: 0;
+    margin-bottom: 1.26rem;
+  }
+
+  .text-section h1 {
+    margin-left: 0;
+    font-size: 2rem;
+  }
+
+  .text-section p {
+    margin-left: 0;
+    font-size: 1rem;
+  }
+
+  .image-section img {
+    margin: 0;
+    max-width: 100%;
+    height: auto;
+  }
 }

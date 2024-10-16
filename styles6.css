@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  background-color: #dfdfdf;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.625rem 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: right;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 0.938rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #007BFF;
+}
+
+.container6 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.image-section {
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info-section {
+  flex: 1;
+  padding: 1.25rem;
+}
+
+h1 {
+  margin-left: 1.25rem;
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.5em;
+  color: #007bff;
+  margin-bottom: 1.25rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 1.25rem;
+}
+
+.icon {
+  font-size: 1.5em;
+  color: #007bff;
+  margin-right: 0.625rem;
+}
+
+.contact-item p {
+  font-size: 1.2em;
+  color: #333;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+strong {
+  font-size: 1.3em;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 3.125rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  padding: 0.625rem;
+  font-family: Arial, sans-serif;
+}
+
+footer p {
+  margin: 0;
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .container6 {
+      flex-direction: column;
+  }
+
+  .image-section {
+      height: 50%;
+  }
+
+  .info-section {
+      height: 50%;
+      padding: 15px;
+  }
+
+  h1 {
+      font-size: 2em;
+  }
+
+  .contact-item p {
+      font-size: 1.1em;
+  }
+}
+
+@media (max-width: 604px) {
+  header {
+    padding: 0.31rem 0;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+
+  nav ul li {
+    margin: 0 0.31rem;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+
+  nav ul li {
+    font-size: 1rem;
+  }
+
+  h1 {
+      font-size: 1.5em;
+  }
+
+  .image-section img {
+    width: 100%;
+  }
+
+  .contact-item p {
+      font-size: 1em;
+  }
+
+  .icon {
+      font-size: 1.2em;
+  }
+
+  .info-section {
+      padding: 0.625rem;
+  }
+}
